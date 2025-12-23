@@ -19,6 +19,6 @@ from django.urls import path
 import jobs.views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('h3k', jobs.views.h3k, name='h3k')
+    path('h3k_admin/', admin.site.urls),
+    path('', jobs.views.h3k, name='h3k')
 ]
