@@ -1,8 +1,7 @@
-"""
-URL configuration for protfolio project.
+"""portfolio URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/6.0/topics/http/urls/
+    https://docs.djangoproject.com/en/2.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -19,6 +18,6 @@ from django.urls import path
 import jobs.views
 
 urlpatterns = [
-    path('h3k_admin/', admin.site.urls),
-    path('', jobs.views.h3k, name='h3k')
+    path('admin/', admin.site.urls),
+    path('', jobs.views.home, name='home'),
 ]
