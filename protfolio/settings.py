@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jobs'
+    'jobs',
+    'student',
 ]
 
 MIDDLEWARE = [
@@ -76,11 +77,11 @@ WSGI_APPLICATION = 'protfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        "NAME": "portfoli_dbase",
-        "USER": "postgres",
-        "PASSWORD": "h3k",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "NAME": "hsuhtet_dbase",
+        "USER": "django_user",
+        "PASSWORD": "myatkoko1993@Gmail.com",
+        "HOST": "localhost",
+        "PORT": "5434",
     }
 }
 
